@@ -300,7 +300,8 @@ if __name__ == "__main__":
     plt.imshow(via_capacity,cmap='hot', interpolation='nearest')
     plt.title('Via Capacity Heatmap')
     if not os.path.exists('../capacityPlot_A*/'):
-    	os.mkdir('../capacityPlot_A*/')
+        os.mkdir('../capacityPlot_A*/')
+    print("here")
     plt.colorbar()
     plt.gca().invert_yaxis()
     plt.savefig('../capacityPlot_A*/viaCapacity.png')
